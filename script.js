@@ -31,10 +31,6 @@ function incremntUserScore() {
 }
 
 function generateRandomChoice() {
-    ai.classList.add('play')
-    setTimeout(() => {
-        ai.classList.remove('play')
-    }, 100);
     const randomNumber = Math.floor(Math.random() * 3) + 1
     if (randomNumber === 1) {
         aiChoice = 'rock'
@@ -48,7 +44,9 @@ function generateRandomChoice() {
         aiChoice = 'scissors'
         aiButton.innerText = '✌🏻'
     }
-
+    setTimeout(() => {
+        aiButton.innerHTML = '🤖'
+    }, 1500);
 }
 
 function getResult() {
