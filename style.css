@@ -88,6 +88,10 @@ button.chosen {
     position: relative;
 }
 
+button:focus {
+    outline: 0;
+}
+
 button.ai {
     border: 10px solid #6F1AB6;
     font-size: 30px;
