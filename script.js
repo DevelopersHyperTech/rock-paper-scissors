@@ -21,9 +21,9 @@ console.log(current_mode.angle)
 
 screen.orientation.lock("landscape")
 
-if (document.querySelector("body").requestFullscreen)
+if (window.onload)
     document.querySelector("body").requestFullscreen();
-else if (document.querySelector("body").webkitRequestFullScreen)
+else if (window.onload)
     document.querySelector("body").webkitRequestFullScreen();
 userButton.forEach(button => button.addEventListener('click', (e) => {
     userChoice = e.target.id
