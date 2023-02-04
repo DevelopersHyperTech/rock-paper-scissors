@@ -22,8 +22,18 @@ body {
     color: #FFF;
     width: 200px;
     position: relative;
-    left: 75px;
+    left: 50px;
     top: 120px;
+}
+
+.container:fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+.container:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
 }
 
 .score-container {
@@ -79,6 +89,15 @@ button.chosen {
     margin: 10px;
 }
 
+button.scissors {
+    margin-left: 15px;
+    text-align: center;
+}
+
+button:focus {
+    outline: 0;
+}
+
 .play {
     transform: scale(1.1);
 }
@@ -86,10 +105,6 @@ button.chosen {
 .game-container {
     padding: 20px;
     position: relative;
-}
-
-button:focus {
-    outline: 0;
 }
 
 button.ai {
