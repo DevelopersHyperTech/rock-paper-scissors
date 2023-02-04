@@ -9,6 +9,22 @@ let aiscore = 0
 let aiChoice
 let userChoice
 let result
+
+var current_mode = screen.orientation;
+
+// type
+console.log(current_mode)
+
+// angle
+console.log(current_mode.angle)
+
+
+screen.orientation.lock("landscape")
+
+if (document.querySelector("body").requestFullscreen)
+    document.querySelector("body").requestFullscreen();
+else if (document.querySelector("body").webkitRequestFullScreen)
+    document.querySelector("body").webkitRequestFullScreen();
 userButton.forEach(button => button.addEventListener('click', (e) => {
     userChoice = e.target.id
     generateRandomChoice();
