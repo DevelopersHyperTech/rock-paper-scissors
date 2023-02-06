@@ -19,12 +19,14 @@ console.log(current_mode)
 console.log(current_mode.angle)
 
 
-screen.orientation.lock("landscape")
-
 if (window.onload)
     document.querySelector("body").requestFullscreen();
 else if (window.onload)
     document.querySelector("body").webkitRequestFullScreen();
+
+
+
+screen.orientation.lock("landscape")
 userButton.forEach(button => button.addEventListener('click', (e) => {
     userChoice = e.target.id
     generateRandomChoice();
@@ -61,7 +63,7 @@ function generateRandomChoice() {
         aiButton.innerText = '✌🏻'
     }
     setTimeout(() => {
-        aiButton.innerHTML = '🤖'
+        aiButton.innerHTML = '⏳'
     }, 1500);
 }
 
