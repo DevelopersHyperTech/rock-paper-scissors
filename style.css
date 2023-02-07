@@ -30,12 +30,16 @@ body:-webkit-full-screen {
     height: 100%;
 }
 
+.container {
+    overflow: hidden;
+}
+
 .header {
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 5px;
     padding: 12px;
     color: #FFF;
-    width: 200px;
+    max-width: 200px;
     position: relative;
     left: 50px;
     top: 120px;
@@ -46,7 +50,7 @@ body:-webkit-full-screen {
 
 .score-container {
     background-color: #FFF;
-    width: 200px;
+    width: 160px;
     padding: 12px;
     border-radius: 5px;
     position: relative;
@@ -54,7 +58,7 @@ body:-webkit-full-screen {
     bottom: 15px;
     border-left: 10px solid #6F1AB6;
     border-right: 10px solid #6F1AB6;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -170,10 +174,29 @@ button:focus {
     border: 2px solid rgba(238, 238, 238, 0.3);
     border-radius: 5px;
 }
+
 @media (max-width:500px) {
     .game-container .user {
         width: 90vw;
         text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    button.chosen {
+        width: 90px;
+        height: 90px;
+        font-size: 25px;
+    }
+    .score-container {
+        position: relative;
+        bottom: 120px;
+        left: 120px;
+        height: 100px;
+        z-index: 100;
+    }
+    .header {
+        left: 100px;
     }
 }
 
@@ -253,6 +276,7 @@ button:focus {
     cursor: pointer;
     color: #FFF;
 }
+
 .end-game button:hover {
     background-color: #CD0404;
 }
