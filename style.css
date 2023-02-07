@@ -247,3 +247,6 @@ button:focus {
     cursor: pointer;
     color: #FFF;
 }
+.end-game button:hover {
+    background-color: #CD0404;
+}
