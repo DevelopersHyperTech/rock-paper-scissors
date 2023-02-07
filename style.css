@@ -170,6 +170,12 @@ button:focus {
     border: 2px solid rgba(238, 238, 238, 0.3);
     border-radius: 5px;
 }
+@media (max-width:500px) {
+    .game-container .user {
+        width: 90vw;
+        text-align: center;
+    }
+}
 
 .button-container {
     display: flex;
