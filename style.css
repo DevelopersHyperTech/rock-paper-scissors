@@ -179,13 +179,6 @@ button:focus {
         height: 90px;
         font-size: 25px;
     }
-    .score-container {
-        position: relative;
-        bottom: 120px;
-        left: 120px;
-        height: 100px;
-        z-index: 100;
-    }
     .header {
         left: 100px;
     }
