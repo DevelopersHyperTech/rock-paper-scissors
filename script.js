@@ -69,30 +69,30 @@ function generateRandomChoice() {
 
 function getResult() {
     if (aiChoice === userChoice) {
-        result = 'its a draw!'
+        result = "IT'S A DRAW!"
     }
     if (aiChoice === 'rock' && userChoice === "paper") {
-        result = 'you win!'
+        result = 'YOU WIN!'
         incremntUserScore();
     }
     if (aiChoice === 'rock' && userChoice === "scissors") {
-        result = 'you lose!'
+        result = 'YOU LOSE!'
         incremntAiScore();
     }
     if (aiChoice === 'paper' && userChoice === "scissors") {
-        result = 'you win!'
+        result = 'YOU WIN!'
         incremntUserScore();
     }
     if (aiChoice === 'paper' && userChoice === "rock") {
-        result = 'you lose!'
+        result = 'YOU LOSE!'
         incremntAiScore();
     }
     if (aiChoice === 'scissors' && userChoice === "rock") {
-        result = 'you win!'
+        result = 'YOU WIN!'
         incremntUserScore();
     }
     if (aiChoice === 'scissors' && userChoice === "paper") {
-        result = 'you lose!'
+        result = 'YOU LOSE!'
         incremntAiScore();
     }
     if (userscore === 10) {
